@@ -1,10 +1,10 @@
-@Library("fagdagjenkins_shared")
+@Library('fagdagjenkins_shared')
 
 pipeline {
     agent any
-    
+
     stages {
-        stage {
+        stage ('Build') {
             steps {
                 sh "ls"
             }
